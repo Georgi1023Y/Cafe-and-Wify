@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Cafe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('static/images/cesar-couto-pC2xOplxsVs-unsplash.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container {
+            margin-top: 50px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4" style="font-family: Roboto;">Add Your Cafe</h1>
+        <form method="POST" action="/add-cafe">
+            <div class="mb-3">
+                <label for="cafeName" class="form-label" style="font-family: Roboto; font-size: 20px;">What is the name of your café ?</label>
+                <input type="text" class="form-control" id="cafeName" name="cafeName" required>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label" style="font-family: Roboto; font-size: 20px;">What are the city and the address of your café ?</label>
+                <input type="text" class="form-control" id="address" name="address" required>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label" style="font-family: Roboto; font-size: 20px;">How would you rate your café ?</label>
+                <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="font-family: Roboto; font-size: 20px;">Add your cafe</button>
+        </form>
+    </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</body>
+</html>

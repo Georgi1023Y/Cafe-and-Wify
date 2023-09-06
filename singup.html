@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sign Up</title>
+    <style>
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("static/images/paul-earle-wVjd0eWNqI8-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container center-container">
+        <div class="col-md-3">
+            <form method="POST" action="/sing_up">
+                <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+                <div class="form-floating" style="margin-bottom: 5px;">
+                    <input type="text" class="form-control" id="floatingInputName" name="floatingInputName" placeholder="Your name" >
+                    <label for="floatingInputName">Your name</label>
+                </div>
+                <div class="form-floating" style="margin-bottom: 5px;">
+                    <input type="email" class="form-control" id="floatingInputEmail" name="floatingInputEmail" placeholder="name@example.com" >
+                    <label for="floatingInputEmail">Email address</label>
+                </div>
+                <div class="form-floating" style="margin-bottom: 5px;">
+                    <input type="password" class="form-control" id="floatingPassword" name="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <button class="btn btn-primary w-100 py-2" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

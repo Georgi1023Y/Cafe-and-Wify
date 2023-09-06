@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Cafe</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("static/images/cesar-couto-pC2xOplxsVs-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            font-family: 'Roboto', sans-serif; 
+        }
+
+       
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+     
+        .form-group label {
+            font-size: 20px;
+        }
+
+        .form-control {
+            font-size: 20px;
+        }
+
+        .btn-primary {
+            font-size: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4" style="font-family: Roboto;">Add a New Cafe</h1>
+        <form action="/add_cafe" method="POST">
+      
+            <div class="form-group">
+                <label for="cafeName" style="font-family: Roboto; font-size: 20px;">Cafe Name</label>
+                <input type="text" class="form-control" id="cafeName" name="cafeName" required>
+            </div>
+            <div class="form-group">
+                <label for="mapUrl" style="font-family: Roboto; font-size: 20px;">Map URL</label>
+                <input type="url" class="form-control" id="mapUrl" name="mapUrl" required>
+            </div>
+            <div class="form-group">
+                <label for="location" style="font-family: Roboto; font-size: 20px;">Location</label>
+                <input type="text" class="form-control" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="item1" style="font-family: Roboto; font-size: 20px;">Are there sockets ?</label>
+                <input type="text" class="form-control" id="item1" name="item1">
+            </div>
+            <div class="form-group">
+                <label for="item2" style="font-family: Roboto; font-size: 20px;">Is there a toilet ?</label>
+                <input type="text" class="form-control" id="item2" name="item2">
+            </div>
+            <div class="form-group">
+                <label for="item3" style="font-family: Roboto; font-size: 20px;">Is there Wifi ?</label>
+                <input type="text" class="form-control" id="item3" name="item3">
+            </div>
+            <div class="form-group">
+                <label for="item4" style="font-family: Roboto; font-size: 20px;">Can you take calls ?</label>
+                <input type="text" class="form-control" id="item4" name="item4">
+            </div>
+            <div class="form-group">
+                <label for="item5" style="font-family: Roboto; font-size: 20px;">How many seats there are ?</label>
+                <input type="text" class="form-control" id="item5" name="item5">
+            </div>
+            <div class="form-group">
+                <label for="item6" style="font-family: Roboto; font-size: 20px;">What is the coffee price ?</label>
+                <input type="text" class="form-control" id="item6" name="item6">
+            </div>
+            <button type="submit" class="btn btn-primary" style="font-family: Roboto; font-size: 20px; margin-bottom: 20px;">Add Cafe</button>
+        </form>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
